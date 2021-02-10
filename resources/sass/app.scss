@@ -1,0 +1,2064 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-color: #15202b;
+
+    .container{
+        max-width: 1360px !important;
+    }
+
+}
+
+* {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+//Start Welcome page CSS
+.page {
+    height: 90vh;
+
+    .left-section {
+        background-color: rgb(113, 201, 248);
+        z-index: 0;
+
+        .active{
+            color: rgb(29, 161, 242);
+            fill: rgb(29, 161, 242);
+        }
+
+
+
+        .bird-bg {
+            top: -30vh;
+            right: -50vh;
+            z-index: -1;
+            position: absolute;
+            color: rgb(29, 161, 242);
+            fill: currentColor;
+            //clip-path: polygon(0 0, 67.1% 0, 67.2% 81.6%, 0 81.6%);
+        }
+
+        @media (max-width: 576px) {
+            .bird-bg {
+                display: none;
+            }
+        }
+
+        .about {
+            .svg-icon {
+                width: 30px;
+                height: 30px;
+                fill: white;
+            }
+
+            .about-text {
+                color: white;
+                font-size: 23px;
+                line-height: 30px;
+                font-weight: bold;
+                //  margin-left: 15px;
+            }
+        }
+    }
+
+    .right-section {
+        position: relative;
+
+        .container-edit {
+            .svg-icon-home{
+                height: 40px;
+                width: 40px;
+                color: rgb(29, 161, 242);
+                fill: currentColor;
+                font-size: 16px;
+                line-height: 2.75rem;
+            }
+            .svg-icon {
+                color: rgb(29, 161, 242);
+                fill: currentColor;
+                font-size: 16px;
+                line-height: 2.75rem;
+            }
+
+            .h3-right-section {
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 1.3125;
+            }
+
+            .p-right-section {
+                font-weight: 700;
+                font-size: 15px;
+            }
+
+            .btn {
+                border-radius: 100px;
+                cursor: pointer;
+            }
+
+            .custom-btn {
+                border-color: #1da1f2;
+                color: #1da1f2;
+            }
+
+            .modal-body {
+                .signup-body {
+                    .centered-signup {
+                        border-radius: 38px;
+                        background-color: white;
+
+                        .svg-icon {
+                            height: 39px;
+                            color: rgb(29, 161, 242);
+                            fill: currentColor;
+                            font-size: 16px;
+                            line-height: 2.75rem;
+                        }
+
+                        .h1-signup {
+                            span {
+                                margin: 40px 0 20px 8px;
+                                font-size: 20px;
+                                font-weight: bold;
+                                line-height: 30.1833px;
+                            }
+                        }
+
+                        .userInfo {
+
+                            .inputName {
+                                input {
+                                    outline-style: none;
+                                    border-style: none;
+                                }
+                            }
+
+                        }
+
+                        .userInfo:focus-within {
+                            border: 1px solid #00acee;
+
+                            .label {
+                                color: #00acee;
+                            }
+
+                            .inputName {
+                                input {
+                                    opacity: 80%;
+                                    background-color: white;
+                                    border-color: #00acee;
+
+                                }
+                            }
+                        }
+
+                        .date-of-birth {
+                            .birth {
+                                padding: 5px;
+                                margin-right: 4px;
+                            }
+
+                            select {
+                                -webkit-appearance: none;
+                                -moz-appearance: none;
+                                appearance: none;
+                                /* Some browsers will not display the caret when using calc, so we put the fallback first */
+                                background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat calc(100% - 10px) !important; /* Better placement regardless of input width */
+                            }
+                        }
+                    }
+
+                    .date-of-birth {
+                        .birth:focus-within {
+
+                            .label {
+                                color: #00acee;
+
+                                select {
+                                    color: #00acee;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                .span-edit {
+                    opacity: 0.7;
+                }
+
+                .cus-btn {
+                    margin-top: 10px;
+                    border: none;
+                    background-color: white;
+                    color: #1da1f2;
+                    outline-style: none;
+                }
+
+                .cus-btn:hover {
+                    text-decoration: underline;
+                }
+
+            }
+        }
+    }
+}
+
+
+.footer {
+    z-index: -2;
+}
+
+//End-of Welcome page CSS
+//Start-of Login page CSS
+.login-body{
+    background-color: #15202b;
+    .login-page {
+        .svg-icon {
+            height: 39px;
+            color: rgb(29, 161, 242);
+            fill: currentColor;
+            font-size: 16px;
+            line-height: 2.75rem;
+        }
+
+        .h1-login {
+            span {
+                font-size: 21px;
+                font-weight: bold;
+                line-height: 30.1833px;
+            }
+        }
+
+        .login-form {
+
+            .form {
+                width: 37.5rem;
+                border: none;
+                border-bottom: 1px solid rgb(29, 161, 242);
+                outline-style: none;
+                padding: 10px 15px;
+                margin-bottom: 10px;
+            }
+
+            @media (max-width: 576px) {
+                .form {
+                    width: 100%
+                }
+            }
+
+            .btn {
+                border-radius: 100px;
+                cursor: pointer;
+                opacity: 0.5;
+                margin-top: 4px;
+                background-color: rgb(29, 161, 242);
+                color: white;
+            }
+            .btn:hover {
+                cursor: pointer;
+                opacity: 100;
+            }
+        }
+
+        .form-footer {
+            .forget-password:after {
+                content: "·";
+                color: rgb(29, 161, 242);
+            }
+        }
+    }
+}
+
+//End-of login page CSS
+//Start-of forgetPassword page CSS
+.Forgetpass-page {
+    .nav-bar {
+        box-shadow: 0 0 3px #aaa;
+        color: #66757f;
+        height: 3rem;
+
+        .container-edit {
+            max-width: 590px;
+            position: relative;
+            top: 1px;
+
+            .left-div {
+                .svg-icon {
+                    height: 30px;
+                    width: 30px;
+                    color: rgb(29, 161, 242);
+                    fill: currentColor;
+                }
+            }
+        }
+    }
+
+    .page-body {
+        max-width: 590px;
+    }
+
+    .form-body {
+        .form-control {
+            border-radius: 50px;
+        }
+
+        .btn {
+            border-radius: 50px;
+        }
+    }
+}
+
+//End-of forgetPassword page CSS
+.container {
+    .row {
+        .profileSection {
+            border-style: solid;
+            border-color: rgb(187, 187, 187);
+            border-top-style: none;
+            border-bottom-style: none;
+            border-width: 1px;
+            padding: 0;
+
+        }
+    }
+}
+
+
+
+.username-box {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1.5rem;
+
+    .username {
+        display: flex;
+        flex-direction: column;
+
+        .name {
+            font-size: 18px;
+            font-weight: 800;
+            color: black;
+            font-family: sans-serif;
+            text-decoration: none;
+        }
+
+        .tweetsnum {
+            display: block;
+            font-size: 13px;
+            line-height: calc(19.6875px);
+            color: rgb(101, 119, 134);
+            text-decoration: none;
+        }
+    }
+
+    .arrowuser {
+        color: rgba(29, 161, 242, 1.00);
+        width: 23px;
+        height: 25px;
+        margin-right: 2rem;
+    }
+
+}
+
+.backgroundImg {
+    margin-top: 10px;
+
+    .tweet-img {
+        img {
+            border-radius: 8px;
+            width: 20px;
+            height: 20px;
+        }
+
+    }
+}
+
+.editProfile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .profilePic {
+        margin-top: -7.5rem;
+        margin-left: 1rem;
+
+        .img-fluid {
+            border-radius: 100px;
+            width: 130px;
+            height: 130px;
+            border: 5px solid #15202b;
+        }
+
+        .img-fluid:hover {
+            cursor: pointer;
+            filter: grayscale(30%);;
+        }
+    }
+
+    .editButton {
+        font-size: 0.9rem;
+        margin-right: 1rem;
+        border-radius: 50px;
+        color: rgba(29, 161, 242, 1.00);
+        font-weight: 800;
+        border-color: rgba(29, 161, 242, 1.00);
+    }
+
+    .editButton:hover {
+        color: #00acee;
+        background-color: #162d3f;
+    }
+.profile{
+    .modal-content {
+        background-color: #15202b !important;
+    }
+    input{
+        background-color: #15202b !important;
+
+    }
+
+    input:focus{
+        outline: #00acee;
+        border-color: #00acee;
+    }
+}
+.bg-image{
+    .background{
+        cursor: pointer;
+    }
+}
+    .editProfile {
+
+
+            .modal-header {
+            }
+
+            .modal-body {
+                padding: 2rem;
+
+                .bg-image {
+                    cursor: pointer;
+                }
+
+                .userInfo {
+                    border: 1px solid #6c757d;
+
+                    .inputName {
+                        input {
+                            outline-style: none;
+                            border-style: none;
+                        }
+                    }
+
+                }
+
+
+                .userInfo:focus-within {
+                    border: 1px solid #00acee;
+
+                    .label {
+                        color: #00acee;
+                    }
+
+                    .inputName {
+                        input {
+                            opacity: 80%;
+                            background-color: white;
+                            border-color: #00acee;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+.userBio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 1rem;
+    margin-top: 0.7rem;
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .username {
+        font-size: 18px;
+        font-weight: 800;
+        color: black;
+        font-family: sans-serif;
+        text-decoration: none;
+    }
+
+    .tag {
+        font-size: 15px;
+        display: block;
+        color: rgb(101, 119, 134);
+    }
+
+    .bio {
+        font-size: 15px;
+
+        margin-top: 5px;
+    }
+
+    .joined {
+        font-size: 15px;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        color: rgb(91, 112, 131);
+
+        .joinIcon {
+            color: rgb(91, 112, 131);
+            margin-right: 5px;
+        }
+    }
+}
+
+.followCount {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-top: 7px;
+
+    .following {
+        margin-right: 1.5rem;
+        color: rgb(101, 119, 134);
+
+        .followingNum {
+            font-weight: 700;
+            color: black;
+        }
+    }
+
+    .follower {
+        margin-right: 1.5rem;
+        color: rgb(101, 119, 134);
+
+        .followerNum {
+            font-weight: 700;
+            color: black;
+        }
+    }
+}
+
+.tabbable {
+    margin-top: 2rem;
+
+    .nav {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 1.2rem;
+        border: 0.005px;
+        border-bottom-color: rgb(187, 187, 187);
+        border-style: solid;
+        border-left-style: none;
+        border-right-style: none;
+        border-top-style: none;
+
+        .nav-item, .tab-x {
+            cursor: pointer;
+            color: rgb(101, 119, 134);
+            font-size: 15px;
+            font-weight: 700;
+            box-sizing: border-box;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: inherit;
+            padding-right: inherit;
+            text-decoration: none;
+        }
+
+        a {
+            color: rgb(101, 119, 134);
+            text-decoration: none;
+        }
+        .nav-link.active{
+            background-color:#15202b !important;
+            border-radius: 0 !important;
+        }
+        .active {
+            color: rgba(29, 161, 242, 1.00);
+            border-bottom: 2px;
+            border-style: solid;
+            border-left-style: none;
+            border-right-style: none;
+            border-top-style: none;
+            border-bottom-color: rgba(29, 161, 242, 1.00);
+
+            a {
+                color: rgba(29, 161, 242, 1.00);
+                text-decoration: none;
+            }
+        }
+
+        .nav-item:hover {
+            color: rgba(29, 161, 242, 1.00);
+        }
+
+    }
+
+
+}
+
+.tab-content {
+    margin-bottom: 5rem;
+    background-color: #F7F9FA;
+
+    .havent {
+        color: rgb(15, 20, 25);
+        background-color: white;
+
+        .p1 {
+            font-size: 19px;
+            font-weight: 700;
+        }
+
+        .p2 {
+            font-size: 15px;
+            color: rgb(91, 112, 131);
+            font-weight: 400;
+        }
+    }
+}
+
+.tab-content:hover {
+    cursor: pointer;
+
+}
+
+
+.left-bar {
+    margin-right: 0;
+
+    .logo {
+        padding: 6px;
+
+        svg {
+            fill: #fff;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .list {
+        .icon {
+            padding: 7px;
+            text-decoration: none;
+            fill: white;
+
+            svg {
+                fill: white;
+                cursor: pointer;
+                width: 25px;
+                height: 25px;
+            }
+
+            div {
+                cursor: pointer;
+                font-weight: 700;
+                font-size: 19px;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+        }
+
+        .icon:hover {
+            width: fit-content;
+            background-color: #162d3f;
+            border-radius: 50px 50px 50px 50px;
+
+            svg {
+                fill: #00acee;
+            }
+
+            div {
+                color: #00acee;
+            }
+        }
+
+    }
+
+}
+
+.login-tab {
+    cursor: pointer;
+    margin-top: 5rem;
+
+    .profile-pic {
+        img {
+            border-radius: 100px;
+            width: 45px;
+            height: 45px;
+        }
+    }
+
+    .user-name {
+        font-size: 13px;
+        text-align: left;
+        color: black;
+
+        .username-tab {
+            font-weight: 700;
+        }
+
+        .tagname-tab {
+            color: rgb(91, 112, 131);
+        }
+
+    }
+
+    .more-tab {
+        svg {
+            fill: white;
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+
+.container{
+    .navbar-fixed{
+        background-color: #15202b;
+        .svg-home {
+            height: 25px;
+            fill: #1da1f2;
+        }
+
+        .icon-hover {
+            cursor: pointer;
+            height: 35px;
+            width: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+        }
+
+        .icon-hover:hover {
+            background-color: #162d3f;
+        }
+
+    }
+}
+.login-tab:hover {
+    text-decoration: none;
+    background-color: #162d3f;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.dropdown-menu {
+    .existingAccount, .logout {
+        font-size: 15px;
+    }
+
+    .check-login {
+        padding: 0 20px 0 10px;
+
+        .login-tab2 {
+            cursor: pointer;
+            text-decoration: none;
+
+            .profile-pic {
+                img {
+                    border-radius: 100px;
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+
+            .user-name {
+                text-decoration: none;
+
+                font-size: 13px;
+                text-align: left;
+                color: white;
+
+                .username-tab {
+                    font-weight: 700;
+                    color: white;
+                }
+
+                .tagname-tab {
+                    color: #598da6;
+                }
+
+            }
+
+            .more-tab {
+                margin-left: 3rem;
+
+                svg {
+                    fill: #00acee;
+
+                }
+            }
+        }
+
+        .login-tab2:hover {
+            text-decoration: none;
+
+        }
+    }
+}
+
+.center-bar {
+    padding: 0;
+    margin: 0;
+}
+.layout{
+    .col-5 {
+        max-width: 100% !important;
+    }
+}
+.searchTwitter {
+    border-radius: 50px 50px 50px 50px;
+    background-color: #253341;
+
+    .searchIcon {
+        fill: white;
+    }
+
+    .searchTwitterInput {
+        margin-block-end: auto;
+
+        input {
+            color: white;
+            outline-style: none;
+            background-color: #253341;
+            border-style: none;
+
+        }
+    }
+
+}
+
+.searchTwitter:focus-within {
+    background-color: #253341;
+    border: 1px solid #00acee;
+
+    .searchIcon {
+        svg {
+            fill: #00acee;
+        }
+
+    }
+
+    .searchTwitterInput {
+        input {
+            background-color: #253341;
+            border-color: #00acee;
+
+        }
+    }
+}
+.drop-size{
+    min-width: 19rem !important;
+    background-color: #15202b;
+}
+.right-bar {
+
+
+    .UserName {
+        margin-left: -6px;
+        color: black;
+
+        .username-tab {
+            font-size: 13px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .tagname-tab {
+            font-size: 12px;
+        }
+
+        .username-tab:hover {
+            text-decoration: black;
+        }
+    }
+
+    .follow-right {
+        height: fit-content;
+        font-size: 12px;
+        border-radius: 50px;
+        color: #00acee;
+        font-weight: 800;
+        border-color: #00acee;
+    }
+
+    .follow-right:hover {
+        background-color: #253341;
+        color: #00acee;
+    }
+
+    .list-group {
+        border-radius: 25px;
+        background-color: #253341;
+    }
+
+    .list-group-item {
+        border-top-style: none;
+        border-left-style: none;
+        border-right-style: none;
+        border-bottom-color: #EFF1F2;
+    }
+
+    .list-group-item:hover {
+        text-decoration: none;
+        background-color: #162d3f;
+    }
+
+    .listHead {
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        font-weight: 800;
+    }
+
+    .listHead:hover {
+        cursor: pointer;
+        background-color: #253341;
+    }
+
+    .trends{
+        .listHead{
+            background-color: #192734;
+            color: #1d95b6 ;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .listHead:hover {
+            cursor: pointer;
+            background-color: #253341;
+        }
+        .list-group-item {
+            background-color: #192734 !important;
+
+
+        }
+        .list-group{
+            background-color: #253341;
+        }
+        .trendInfo {
+            color: black;
+
+            .trendCountry, .trendTweetsNum {
+                color: rgb(91, 112, 131);
+                font-size: 13px;
+            }
+
+            .trend {
+                text-align: right;
+                direction: rtl;
+                font-weight: 700;
+                font-size: 15px;
+                font-family: Tahoma, Arial, sans-serif;
+            }
+        }
+
+        .trendInfo:hover {
+            color: black;
+        }
+    }
+    }
+.mightFollow{
+    .listHead{
+        background-color: #192734;
+        color: #1d95b6 ;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .list-group-item {
+        background-color: #192734 !important;
+    }
+}
+.hover:hover{
+
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #192734 !important;
+    border-radius: 8px;
+}
+.dropdown-menu {
+    max-height: max-content;
+    max-width: max-content;
+}
+.radius{
+    border-radius: 1.3rem;
+    box-shadow: 0 2px 6px 0 whitesmoke, 0 6px 5px 0 rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+.tweetform {
+
+    .profilePictweet {
+        img {
+            border-radius: 100px;
+            width: 45px;
+            height: 45px;
+        }
+    }
+
+    .form {
+        border-style: none;
+        width: 100%;
+        outline: none;
+        resize: none;
+
+    }
+}
+
+
+.profilePic {
+    .img-fluid {
+        border-radius: 100px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+//Start Welcome page CSS
+.page {
+    height: 100vh;
+
+    .left-section {
+        background-color: rgb(113, 201, 248);
+        z-index: 0;
+
+        .bird-bg {
+            display: block;
+            top: -30vh;
+            right: -50vh;
+            z-index: -1;
+            position: absolute;
+            color: rgb(29, 161, 242);
+            fill: currentColor;
+            clip-path: polygon(0 0, 0 0, 0 99.6%, 0 100.6%);
+        }
+
+        @media (max-width: 576px) {
+            .bird-bg {
+                display: none;
+            }
+        }
+
+        .about {
+            .svg-icon {
+                width: 30px;
+                height: 30px;
+                fill: white;
+            }
+
+            .about-text {
+                color: white;
+                font-size: 23px;
+                line-height: 30px;
+                font-weight: bold;
+                //  margin-left: 15px;
+            }
+        }
+    }
+
+    .right-section {
+        position: relative;
+
+        .container-edit {
+            .svg-icon {
+                color: rgb(29, 161, 242);
+                fill: currentColor;
+                font-size: 16px;
+                line-height: 2.75rem;
+            }
+
+            .h3-right-section {
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 1.3125;
+            }
+
+            .p-right-section {
+                font-weight: 700;
+                font-size: 15px;
+            }
+
+            .btn {
+                border-radius: 100px;
+                cursor: pointer;
+            }
+
+            .custom-btn {
+                background-color: white;
+                border-color: #1da1f2;
+                color: #1da1f2;
+            }
+        }
+    }
+
+    .modal-content {
+        .modal-body {
+            .signup-body {
+                .centered-signup {
+                    border-radius: 38px;
+                    background-color: white;
+
+                    .svg-icon {
+                        height: 39px;
+                        color: rgb(29, 161, 242);
+                        fill: currentColor;
+                        font-size: 16px;
+                        line-height: 2.75rem;
+                    }
+
+                    .h1-signup {
+                        span {
+                            margin: 40px 0 20px 8px;
+                            font-size: 20px;
+                            font-weight: bold;
+                            line-height: 30.1833px;
+                        }
+                    }
+
+                    .signup-form {
+                        display: flex;
+                        flex-direction: column;
+                        margin: auto;
+
+                        .form {
+                            border: none;
+                            border-bottom: 1px solid rgb(29, 161, 242);
+                            outline-style: none;
+                            padding: 10px 15px;
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    .span-edit {
+                        opacity: 0.7;
+                        color: black;
+                    }
+
+                    .cus-btn {
+                        margin-top: 10px;
+                        border: none;
+                        background-color: white;
+                        color: #1da1f2;
+                        outline-style: none;
+                    }
+
+                    .cus-btn:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        z-index: -2;
+    }
+}
+
+//End-of Welcome page CSS
+//Start-of Login page CSS
+.login-page {
+    .svg-icon {
+        height: 39px;
+        color: rgb(29, 161, 242);
+        fill: currentColor;
+        font-size: 16px;
+        line-height: 2.75rem;
+    }
+
+    .h1-login {
+        span {
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 30.1833px;
+        }
+    }
+
+    .login-form {
+
+        .form {
+            width: 37.5rem;
+            border: none;
+            border-bottom: 1px solid rgb(29, 161, 242);
+            outline-style: none;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+        }
+
+        @media (max-width: 576px) {
+            .form {
+                width: 100%
+            }
+        }
+
+        .btn {
+            border-radius: 100px;
+            cursor: pointer;
+            opacity: 0.5;
+            margin-top: 4px;
+            background-color: rgb(29, 161, 242);
+            color: white;
+        }
+    }
+
+    .form-footer {
+        .forget-password:after {
+            content: "·";
+            color: rgb(29, 161, 242);
+        }
+    }
+}
+
+//End-of login page CSS
+//Start-of forgetPassword page CSS
+.Forget-password-page {
+    .nav-bar {
+        box-shadow: 0 0 3px #aaa;
+        color: #66757f;
+        height: 3rem;
+
+        .container-edit {
+            max-width: 590px;
+            position: relative;
+            top: 1px;
+
+            .left-div {
+                .svg-icon {
+                    height: 30px;
+                    width: 30px;
+                    color: rgb(29, 161, 242);
+                    fill: currentColor;
+                }
+            }
+        }
+    }
+
+    .form-body {
+        .form-control {
+            border-radius: 50px;
+        }
+
+        .btn {
+            border-radius: 50px;
+        }
+    }
+
+    .page-body {
+        max-width: 590px;
+    }
+}
+
+//End-of forgetPassword page CSS
+
+//home page
+
+.home-display {
+    .head-home {
+        .svg-home {
+            height: 25px;
+            fill: #1da1f2;
+        }
+
+        .icon-hover {
+            cursor: pointer;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+        }
+
+        .icon-hover:hover {
+            background-color: #162d3f;
+        }
+
+    }
+
+    .line {
+        background-color: #f7f9fa;
+        height: 8px;
+    }
+
+    .post-body {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+
+        .icon-post {
+            height: 18px;
+            fill: #798a99;
+        }
+
+        .email-body {
+            font-size: 13px;
+            color: #798a99;
+        }
+
+        .time-post {
+            font-size: 13px;
+            color: #798a99;
+        }
+
+
+        .font-icon {
+            font-size: 13px;
+            color: #798a99;
+        }
+
+        .icon-comments {
+            cursor: pointer;
+            background-color: white;
+            height: 29px;
+            width: 29px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+        }
+
+        .icon-comments:hover {
+            background-color: #e8f5fe;
+        }
+
+        .icon-share {
+            cursor: pointer;
+            background-color: white;
+            height: 29px;
+            width: 29px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+        }
+
+        .icon-share:hover {
+            background-color: #e0f1e8;
+        }
+
+        .icon-like {
+            cursor: pointer;
+            background-color: white;
+            height: 29px;
+            width: 29px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+        }
+
+        .icon-like:hover {
+            background-color: #f5e1e7;
+        }
+
+
+        .icon-send {
+            cursor: pointer;
+            background-color: white;
+            height: 29px;
+            width: 29px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+        }
+
+        .icon-send:hover {
+            background-color: #e8f5fe;
+        }
+
+        .svg-color:hover {
+            fill: #1da1f2;
+        }
+
+        .svg-like:hover {
+            fill: #e0245e;
+        }
+
+        .svg-share:hover {
+            fill: #17bf63;
+        }
+
+        .post-font {
+            margin-top: 1px;
+        }
+
+        .post-font-share {
+            margin-top: 2px;
+        }
+
+    }
+
+    .line {
+        background-color: #f7f9fa;
+        height: 8px;
+    }
+
+}
+
+.notifc{
+
+    .list-group-item {
+        position: relative;
+        display: block;
+        padding: 0.75rem 1.25rem;
+        background-color: #15202b !important;
+
+    }
+}
+.post-form{
+    .addTweet{
+        background-color: #15202b;
+    }
+    .addTweet:focus {
+        box-sizing: border-box;
+        outline: none;
+    }
+    .reply{
+        background-color:#15202b ;
+    }
+    .svg-reply {
+        height: 20px;
+        fill: #1da1f2;
+        font-size: 16px;
+        line-height: 2.75rem;
+        margin: 10px 0 10px 0;
+    }
+
+    .text {
+        font-size: 13px;
+        font-weight: bold;
+        color: #1da1f2;
+    }
+
+    .icon-post-hover {
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+    }
+
+    .icon-post-hover:hover {
+        background-color: #162d3f;
+    }
+
+    .reply-hover {
+        cursor: pointer;
+        display: flex;
+        width: 10rem;
+        height: 2rem;
+    }
+
+    .reply-hover:hover {
+        background-color: #162d3f;
+    }
+}
+.tools {
+    .addTweet{
+        background-color: #15202b;
+    }
+    .addTweet:focus {
+        box-sizing: border-box;
+        outline: none;
+    }
+    .reply{
+        background-color:#15202b ;
+    }
+    .svg-reply {
+        height: 20px;
+        fill: #1da1f2;
+        font-size: 16px;
+        line-height: 2.75rem;
+        margin: 10px 0 10px 0;
+    }
+
+    .text {
+        font-size: 13px;
+        font-weight: bold;
+        color: #1da1f2;
+    }
+
+    .icon-post-hover {
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+    }
+
+    .icon-post-hover:hover {
+        background-color: #162d3f;
+    }
+
+    .reply-hover {
+        cursor: pointer;
+        display: flex;
+        width: 10rem;
+        height: 2rem;
+    }
+
+    .reply-hover:hover {
+        background-color: #162d3f;
+    }
+}
+
+//home page
+.home-container {
+    .head-home {
+        .svg-home {
+            height: 25px;
+            fill: #1da1f2;
+        }
+
+        .icon-hover {
+            cursor: pointer;
+            background-color: white;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+        }
+
+        .icon-hover:hover {
+            background-color: #e8f5fe;
+        }
+
+    }
+
+    .line {
+        background-color: #f7f9fa;
+        height: 8px;
+    }
+
+    .post-body {
+        .icon-post {
+            height: 18px;
+            fill: #798a99;
+        }
+
+        .email-body {
+            font-size: 13px;
+            color: #798a99;
+        }
+
+        .time-post {
+            font-size: 13px;
+            color: #798a99;
+        }
+
+        .img-post {
+            border-radius: 50px 50px 50px 50px;
+        }
+
+        .font-icon {
+            font-size: 13px;
+            color: #798a99;
+        }
+
+        .icon-comments {
+            cursor: pointer;
+            background-color: white;
+            height: 29px;
+            width: 29px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+        }
+
+        .icon-comments:hover {
+            background-color: #e8f5fe;
+        }
+
+        .icon-share {
+            cursor: pointer;
+            background-color: white;
+            height: 29px;
+            width: 29px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+        }
+
+        .icon-share:hover {
+            background-color: #e0f1e8;
+        }
+
+        .icon-like {
+            cursor: pointer;
+            background-color: white;
+            height: 29px;
+            width: 29px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+        }
+
+        .icon-like:hover {
+            background-color: #f5e1e7;
+        }
+
+        .icon-send {
+            cursor: pointer;
+            background-color: white;
+            height: 29px;
+            width: 29px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+        }
+
+        .icon-send:hover {
+            background-color: #e8f5fe;
+        }
+
+        .svg-color:hover {
+            fill: #1da1f2;
+        }
+
+        .svg-like:hover {
+            fill: #e0245e;
+        }
+
+        .svg-share:hover {
+            fill: #17bf63;
+        }
+
+        .post-font {
+            margin-top: 1px;
+        }
+
+        .post-font-share {
+            margin-top: 2px;
+        }
+    }
+
+    .tools {
+        .svg-reply {
+            height: 20px;
+            fill: #1da1f2;
+            font-size: 16px;
+            line-height: 2.75rem;
+            margin: 10px 0 10px 0;
+        }
+
+        .text {
+            font-size: 13px;
+            font-weight: bold;
+            color: #1da1f2;
+        }
+
+        .icon-post-hover {
+            cursor: pointer;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+        }
+
+        .icon-post-hover:hover {
+            background-color: #162d3f;
+        }
+
+        .reply-hover {
+            cursor: pointer;
+            background-color: #162d3f;
+            display: flex;
+            width: 10rem;
+            height: 2rem;
+        }
+
+        .reply-hover:hover {
+            background-color: #162d3f;
+        }
+    }
+}
+
+.tweet {
+    .tweet-card, .list-group-item {
+        padding: 1rem;
+        background-color: #15202b;
+        border-radius: 0 !important;
+
+        .tweetProfileHead {
+            .poster-image {
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+                }
+            }
+
+            .tweet-head {
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+
+                .tweet-name {
+                    display: flex;
+                    flex-direction: row;
+
+                    .name {
+                        font-size: 15px;
+                        font-weight: 700;
+                        color: black;
+                        font-family: sans-serif;
+                        cursor: pointer;
+                    }
+
+                    .tag {
+                        color: rgb(101, 119, 134);
+                        margin-left: 5px;
+                        font-size: 13px;
+                    }
+
+                    .dot {
+                        color: rgb(101, 119, 134);
+                        margin-left: 5px;
+                    }
+
+                    .time {
+                        cursor: pointer;
+                        color: rgb(101, 119, 134);
+                        margin-left: 5px;
+                        font-size: 13px;
+                    }
+
+                }
+
+            }
+
+            .more {
+                border-radius: 100%;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                svg {
+                    fill: white;
+                }
+            }
+
+            .more:hover {
+                border-radius: 100%;
+                background-color: #162d3f;
+
+                svg {
+                    fill: #00acee;
+                }
+            }
+
+            .delete {
+                color: red;
+                font-size: 14px;
+            }
+
+            .edit {
+                color: green;
+                font-size: 14px;
+            }
+        }
+
+        .tweetBodyIcons {
+            margin-left: 60px;
+
+            .tweet-body {
+                padding-right: 1rem;
+                line-break: anywhere;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                text-align: left;
+
+                .img-post {
+                    border-radius: 1rem;
+                }
+
+                .tweet-media {
+
+                    img {
+                        border-radius: 20px;
+                    }
+
+                    margin-top: 1rem;
+                }
+            }
+
+            .tweet-icons {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 1rem;
+
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 45px;
+                    text-decoration: none;
+                    color: black;
+                    opacity: 50%;
+                    font-size: 15px;
+                    text-align: justify;
+
+                    span {
+                        margin-left: 2px;
+                    }
+
+                    svg {
+                        width: 23px;
+                        height: 23px;
+                        fill: white;
+
+                    }
+
+                }
+
+                .comments:hover, .share:hover, .statistic:hover {
+                    text-decoration: none;
+                    color: #00acee;
+                    opacity: 100%;
+                }
+
+                .replay:hover {
+                    text-decoration: none;
+                    color: rgb(23, 191, 99);
+                    opacity: 100%;
+                }
+
+                .likes:hover {
+                    text-decoration: none;
+                    fill: rgb(224, 36, 94);
+                    opacity: 100%;
+                }
+
+                .unlikes {
+                    color: rgb(224, 36, 94);
+                    fill: rgb(224, 36, 94);
+                    opacity: 100%;
+                }
+
+                .unlikes:hover {
+                    opacity: 50%;
+                }
+
+            }
+        }
+
+
+    }
+
+    .tweet-card:hover {
+        background-color: #1c2732;
+
+    }
+}
+
+.tweet-btn-size{
+    width: 25% !important;
+}
+
+.tweet-btn {
+    color: white;
+    background-color: #00acee;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.tweet-btn:hover {
+    background-color: rgb(26, 145, 218);
+}
+
+.nopadding {
+    padding: 0 !important;
+}
+
+.page-head {
+    font-size: 19px;
+    font-weight: 800;
+    color: rgb(15, 20, 25);
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-content {
+    height: 90vh;
+    border-radius: 40px;
+}
+
+.comment_section{
+    .svg-icon {
+        width: 25px;
+        height: 25px;
+        color: rgb(29, 161, 242);
+        fill: currentColor;
+        font-size: 16px;
+        line-height: 2.75rem;
+    }
+    .svg-retweet{
+        width: 18px;
+        height: 18px;
+        color: rgb(91, 112, 131);
+        fill: currentColor;
+        font-size: 16px;
+        line-height: 2.75rem;
+    }
+    .retweet_font{
+        font-size: 13px;
+    }
+    .comment_mail{
+        font-size: 13px;
+    }
+    .img_comment{
+        border-radius: 1rem;
+    }
+    .time_comment{
+        font-size: 14px;
+    }
+    .comment_feture{
+        font-size: 15px;
+    }
+    .comment_svg{
+        width: 20px;
+        height: 20px;
+        color: rgb(91, 112, 131);
+        fill: currentColor;
+        font-size: 16px;
+        line-height: 2.75rem;
+    }
+    .reply_comment{
+        font-size: 14px;
+    }
+}
+
+.replay-comment:focus-within{
+    outline: none;
+    border: none;
+}
+
+.comment_section{
+    .svg-icon {
+        width: 25px;
+        height: 25px;
+        color: rgb(29, 161, 242);
+        fill: currentColor;
+        font-size: 16px;
+        line-height: 2.75rem;
+    }
+    .svg-retweet{
+        width: 18px;
+        height: 18px;
+        color: rgb(91, 112, 131);
+        fill: currentColor;
+        font-size: 16px;
+        line-height: 2.75rem;
+    }
+    .svg-retweet:hover{
+        color: white;
+    }
+    .retweet_font{
+        font-size: 13px;
+    }
+    .comment_mail{
+        font-size: 13px;
+    }
+    .img_comment{
+        border-radius: 1rem;
+    }
+    .time_comment{
+        font-size: 14px;
+    }
+    .comment_feture{
+        font-size: 15px;
+    }
+    .comment_svg{
+        width: 20px;
+        height: 20px;
+        color: rgb(91, 112, 131);
+        fill: currentColor;
+        font-size: 16px;
+        line-height: 2.75rem;
+    }
+    .comment_svg:hover{
+        color: white;
+    }
+    .reply_comment{
+        font-size: 14px;
+    }
+}
+.modal-insert{
+    .modal-content{
+        background-color: #15202b;
+    }
+
+    .svg-home {
+        height: 25px;
+        fill: #1da1f2;
+    }
+
+    .icon-hover {
+        cursor: pointer;
+        height: 35px;
+        width: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+    }
+
+    .icon-hover:hover {
+        background-color: #162d3f;
+    }
+
+}
